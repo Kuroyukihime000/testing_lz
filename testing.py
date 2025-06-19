@@ -15,12 +15,12 @@ def test_posotive_number():
     assert f.fun(0.2, -0.1, 0.2, -0.1) == 1.8257
 
 def test_negative_root():
-    assert f.fun(-2, 1, 1, 1) == 'can\'t sqrt negative'
+    assert f.fun(-2, 1, 1, 1) == "can't divide zero without complex"
 
 def test_error_input():
-    assert f.fun("asdsa", 0,0,0) == "this is not number"
-    assert f.fun("", 0,0,0) == "this is not number"
-    assert f.fun("10**-9", 0,0,0) == "this is not number"
+    assert f.fun("asdsa", 0,0,0) == "this is not a number"
+    assert f.fun("", 0,0,0) == "this is not a number"
+    assert f.fun("10**-9", 0,0,0) == "this is not a number"
 
 
 'Изначально проверяем деление на ноль - возникает ошибка "Деление на ноль невозможно"/пример значений (2,2,2,2) - ошибка исправлена'
